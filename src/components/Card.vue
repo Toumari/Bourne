@@ -96,7 +96,7 @@ const props = defineProps({
 }
 
 .card-title {
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: bold;
     padding-inline: .5rem;
     padding-top: 1rem;
