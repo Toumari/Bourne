@@ -89,11 +89,13 @@ const props = defineProps({
     padding: 0rem 1rem 1rem 1rem;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: space-around;
 
 }
 
 .card-title {
-    font-size: 1.25rem;
+    font-size: 0.5rem;
     font-weight: bold;
     padding-inline: .5rem;
     padding-top: 1rem;
@@ -125,7 +127,7 @@ const props = defineProps({
     color: #fca311;
     cursor: pointer;
     transition: all 0.3s ease;
-    justify-self: end;
+    align-self: end;
 }
 
 /* xs */
@@ -135,9 +137,7 @@ const props = defineProps({
 /* @media (min-width: 640px) {} */
 
 /* md */
-@media (min-width: 768px) {
-    .card {}
-}
+@media (min-width: 768px) {}
 
 /* lg */
 /* @media (min-width: 1024px) {} */
