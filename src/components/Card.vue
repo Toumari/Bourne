@@ -91,6 +91,7 @@ const props = defineProps({
     border-bottom-right-radius: 8px;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
 
 }
 
