@@ -60,7 +60,7 @@ onMounted(() => {
     margin-inline: auto;
     margin-bottom: 1rem;
     font-size: calc(0.875rem + 0.1vw);
-    background: #4d4d4d;
+    background: rgb(219, 104, 3);
     color: white;
     padding: 15px;
     cursor: pointer;

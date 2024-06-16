@@ -1,6 +1,6 @@
 <template>
     <section class="section container contact" id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title" class="title">Contact Me</h2>
+        <h2 id="contact-title" class="title">Contact Us</h2>
         <p class="contact__description">Get in touch with me via email and I'll reply as fast as I can to your enquiry!
         </p>
         <form action="https://api.web3forms.com/submit" method="POST" aria-label="Contact Form">
@@ -25,6 +25,10 @@
 </script>
 
 <style scoped>
+* {
+    font-family: 'Switzer', sans-serif;
+}
+
 .contact {
     width: 100%;
     max-width: 800px;
@@ -69,11 +73,11 @@
 }
 
 .contact__submit {
-    background-color: #FFD913;
+    background-color: #fca311;
     padding: 0.5rem 1.1rem;
     border-radius: 8px;
     font-weight: bold;
-    color: #4d4d4d;
+    color: #fff;
     display: block;
     font-size: var(--fs-sm);
     margin-inline: auto;

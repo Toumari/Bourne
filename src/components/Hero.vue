@@ -1,13 +1,19 @@
 <template>
-    <div class="hero__wrapper">
-        <span class="title__lemon" ref="titleLemon">🍋</span>
-        <section class="hero container" role="region" aria-label="Hero Section" ref="hero">
-            <h1 class="hero__title">We build the website your brand deserves</h1>
-            <p ref="myElement" class="hero__description">
-                Showcase your brand's individuality with a website built to stand out
-            </p>
-            <p class="learn__more">Learn More</p>
-            <img src="@/assets/down2.png" class="chevron" alt="" />
+    <div class="hero__wrapper container">
+        <section class="hero" role="region" aria-label="Hero Section" ref="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Bourne</h1>
+                <p class="hero-text">
+                    We are a team of experienced adventurers who have traveled the world. We are here to help you plan
+                    your next adventure. Whether you are looking for a relaxing beach vacation or a challenging mountain
+                    climb, we have you covered.
+                </p>
+                <a class="hero-btn" href="#about">Learn More <svg class="arrow" width="800px" height="800px" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#fca311" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+            </div>
         </section>
     </div>
 </template>
@@ -18,167 +24,113 @@ import { onMounted, onUnmounted } from "vue";
 import { gsap } from "gsap";
 
 onMounted(() => {
+
     let ctx = gsap.context(() => {
-
-        gsap.from('.hero__title', {
-            duration: 0.5,
-            y: -50,
-            autoAlpha: 1,
-            ease: 'back.out(1.7)',
-            stagger: 0.2,
-        });
-
-        gsap.from('.hero__description', {
-            duration: 0.75,
-            y: -50,
-            autoAlpha: 1,
-            ease: 'back.out(1.7)',
-            stagger: 0.2,
-        });
-
-        gsap.fromTo(
-            ".title__lemon",
-            {
-                x: "-10vw",
-            },
-            {
-                duration: 15,
-                x: "105vw",
-                y: gsap.utils.random(-100, 100),
-                ease: "linear",
-                rotation: 360,
-                repeat: -1,
-                yoyo: true,
-            }
-        );
-
-        gsap.from(".chevron", {
-            duration: 0.5,
-            y: 10,
-            repeat: -1,
-            yoyo: true,
-            ease: "back.out(1)",
-        });
+        let tl = gsap.timeline();
+        tl.from(".hero-title", {
+            duration: 1,
+            y: 100,
+            opacity: 0,
+            ease: "power4.out",
+        })
+            .from(".hero-text", {
+                duration: 1,
+                y: 100,
+                opacity: 0,
+                ease: "power4.out",
+            }, "-=0.75")
+            .from(".hero-btn", {
+                duration: 1,
+                y: 100,
+                opacity: 0,
+                ease: "power4.out",
+            }, "-=0.75");
     });
 
-    onUnmounted(() => {
-        ctx.pause() && ctx.revert();
-    });
 });
 
-const scrollToKeyFeatures = () => {
-    document
-        .querySelector(".key__article")
-        .scrollIntoView({ behavior: "smooth", block: "nearest" });
-};
 </script>
 
 <style scoped>
-.hero__wrapper {
-    position: relative;
-    overflow: hidden;
-
-}
-
-.learn__more {
-    margin-top: 1rem;
-    font-weight: 500;
-    font-size: calc(1.2rem + 0.1vw);
-    margin-bottom: 1rem;
-}
-
-.chevron {
-    width: 2rem;
-    padding-bottom: 1rem;
-}
-
-.hero__wrapper,
-.hero {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
+@import url('https://api.fontshare.com/v2/css?f[]=switzer@300,700,900&display=swap');
 
 .hero {
-    text-align: center;
-    min-height: calc(10rem + 45vh);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: 2.5rem;
-    user-select: none;
+    height: 90vh;
 }
 
-.title__lemon {
-    position: absolute;
-    font-size: 7.5rem;
-    transform: rotate(10deg);
-    left: 0rem;
-    opacity: 0.4;
-    top: 36%;
-}
-
-.hero__title {
+.hero-title {
+    font-size: calc(5rem + 1vw);
     font-weight: 900;
-    margin: 0 auto;
-    letter-spacing: 0.25px;
-    max-width: 25ch;
-    margin-inline: auto;
-    color: #2d2d2d;
-    z-index: 1;
-    font-size: calc(3rem + 0.1vw);
+    color: #fff;
+    margin-bottom: 1rem;
+    font-family: "Switzer", serif;
+    text-align: left;
+    opacity: 0.35;
 }
 
-.hero__description {
-    font-size: calc(1.2rem + 0.1vw);
-    font-weight: 400;
-    margin-block: var(--size-2xl);
-    max-width: 30ch;
-    color: #2d2d2d;
+.hero-text {
+    font-family: "Switzer", serif;
+    font-size: calc(1rem + 0.2vw);
+    color: #fff;
+    margin-bottom: 2rem;
+    max-width: 65ch;
+    line-height: 1.6;
+}
+
+.hero-btn {
+    border-bottom: 2px solid #fca311;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-size: calc(1.25rem + 0.1vw);
+    font-weight: bold;
+    color: #fca311;
+    cursor: pointer;
+}
+
+.hero-btn .arrow {
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-block;
 }
 
 /* xs */
-@media (min-width: 475px) {
-    .hero__description {
-        max-width: 32ch;
-    }
-}
+/* @media (min-width: 475px) {} */
 
 /* sm */
-@media (min-width: 640px) {
-    .hero__description {
-        max-width: 35ch;
-    }
-}
+/* @media (min-width: 640px) {} */
 
 /* md */
-@media (min-width: 768px) {
-    .hero__title {
-        font-size: calc(2rem + 2.5vw);
-        max-width: 20ch;
-    }
+@media (min-width: 768px) {}
 
-    .hero__description {
-        font-size: calc(1.3rem + 0.1vw);
-    }
-}
-
+/* lg */
 @media (min-width: 1024px) {
     .hero {
-        margin-top: 5rem;
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    .hero-title {
+        font-size: calc(15rem + 1vw);
+        opacity: 0.35;
+    }
+
+    .hero-text {
+        font-size: calc(1.25rem + 0.2vw);
+        max-width: 60ch;
     }
 }
 
-@media (min-width: 1536px) {
-    .hero__title {
-        line-height: 1;
-    }
+/* xl */
+/* @media (min-width: 1280px) {} */
 
-    .hero__description {
-        margin-top: var(--size-xl);
-        margin-bottom: var(--size-3xl);
-        max-width: 28ch;
-    }
-}
+/* xxl */
+/* @media (min-width: 1536px) {} */
 </style>

@@ -1,7 +1,4 @@
 <script setup>
-
-import Header from '@/components/Header.vue'
-
 </script>
 
 <template>
@@ -12,8 +9,8 @@ import Header from '@/components/Header.vue'
 
 <style>
 @font-face {
-  font-family: 'satoshi';
-  src: url("@/assets/Satoshi-Variable.ttf")
+  font-family: 'switzer';
+  src: url("@/assets/Switzer-Variable.ttf")
 }
 
 body {

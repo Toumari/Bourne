@@ -1,10 +1,18 @@
 <template>
     <header class="header container" :class="{ hidden: !isMobile }" role="banner">
-        <p class="logo">Lemony</p>
+        <p class="logo">Bourne</p>
         <ul class="header__menu" role="menu">
-            <li role="menuitem"><a :href="'#about'" @click.prevent="scrollToAbout">About</a></li>
-            <li role="menuitem"><a :href="'#services'" @click.prevent="scrollToServices">Services</a></li>
-            <li role="menuitem"><a :href="'#contact'" @click.prevent="scrollToContact">Contact</a></li>
+            <li role="menuitem">
+                <!-- <a :href="'#about'" @click.prevent="scrollToAbout">About</a> -->
+                <router-link :to="{ name: 'home', hash: '#about' }">About</router-link>
+            </li>
+            <li role="menuitem">
+                <router-link :to="{ name: 'home', hash: '#casestudy' }">Case Study</router-link>
+            </li>
+            <li role=menuitem>
+                <router-link :to="{ name: 'home', hash: '#contact' }">Contact</router-link>
+            </li>
+
         </ul>
         <button aria-label="Toggle Mobile Navigation" class="header__bars" id="header__bars" @click="toggleNav"
             aria-expanded="false" aria-controls="mobile-nav">
@@ -19,8 +27,8 @@
                     <a :href="'#about'" @click.prevent="scrollToAbout" role="menuitem" class="mobile-link">About</a>
                 </li>
                 <li class="mobile__nav-link" role="menuitem">
-                    <a :href="'#services'" @click.prevent="scrollToServices" role="menuitem"
-                        class="mobile-link">Services</a>
+                    <a :href="'#services'" @click.prevent="scrollToServices" role="menuitem" class="mobile-link">Case
+                        Study</a>
                 </li>
                 <li class="mobile__nav-link" role="menuitem">
                     <a :href="'#contact'" @click.prevent="scrollToContact" role="menuitem"
@@ -47,7 +55,7 @@ const scrollToAbout = () => {
 
 const scrollToServices = () => {
     // Smooth scrolling behavior (optional):
-    document.querySelector('.services').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('#casestudy').scrollIntoView({ behavior: 'smooth' });
     isMenuOpen.value = false
     isMobile.value = false
 }
@@ -90,12 +98,11 @@ watch(isMobile, (newVal) => {
 }
 
 .header {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    color: var(--clr-dark);
+    color: #fff;
     z-index: 999;
     background-color: transparent;
 }
@@ -136,7 +143,7 @@ a {
 
 .header__bars {
     background-color: none !important;
-    color: var(--clr-dark);
+    color: #fff;
     display: block;
     z-index: 999;
     font-size: 1.5rem;
@@ -160,8 +167,8 @@ a {
     font-size: calc(1rem + 0.5vw);
     font-weight: 900;
     scroll-behavior: no-scroll;
-    background-color: #fafafa;
-    color: var(--clr-dark);
+    background-color: #333;
+    color: #fff;
     text-align: center;
     animation: slideIn 0.5s ease-in-out;
 }

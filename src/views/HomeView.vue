@@ -2,45 +2,91 @@
 
 import Header from '@/components/Header.vue'
 import Hero from '@/components/Hero.vue'
-import About from '@/components/About.vue'
-import Services from '@/components/Services.vue'
-import KeyPoints from '@/components/KeyPoints.vue'
+import Offering from '@/components/Offering.vue'
+import CaseStudy from '@/components/CaseStudy.vue'
+import AboutUs from '@/components/AboutUs.vue'
 import FAQ from '@/components/FAQ.vue'
-import PortfolioThree from '@/components/PortfolioThree.vue'
 import Contact from '@/components/Contact.vue'
 import Footer from '@/components/Footer.vue'
+import Lenis from 'lenis'
+
+
+import { onMounted, ref } from 'vue'
+
+onMounted(() => {
+  console.log("navigated To Home")
+})
+
+const lenis = new Lenis()
 
 
 
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
 
 </script>
 
 <template>
   <main>
     <div class="top-section">
-      <div class="hero">
-        <Header />
-        <Hero />
-      </div>
-      <KeyPoints />
-      <Services />
-      <About />
-      <PortfolioThree />
-      <FAQ />
-      <Contact />
-
-      <Footer />
+      <Header />
+      <Hero />
     </div>
+    <AboutUs />
+    <Offering />
+    <CaseStudy />
+    <FAQ />
+    <Contact />
+
+
+    <Footer />
+
   </main>
 
 </template>
 
 <style scoped>
 .top-section {
-
-  background-color: #fdfbf9;
-  padding: 0rem 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(248, 249, 98, 0) 0%, rgba(35, 32, 32, 1) 91%), url("../assets/mountains.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
 }
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+
+
+
+
+
 
 html,
 body,

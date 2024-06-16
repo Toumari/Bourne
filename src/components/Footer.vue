@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p>&copy;2024 Lemony</p>
+        <p>&copy;2024 Bourne</p>
     </footer>
 </template>
 

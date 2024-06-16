@@ -1,5 +1,5 @@
 {
-  "name": "lemony",
+  "name": "new_site",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -12,9 +12,10 @@
     "@vueuse/components": "^10.9.0",
     "@vueuse/core": "^10.9.0",
     "gsap": "^3.12.5",
-    "lenis": "^1.1.2",
+    "lenis": "^1.1.3",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vue3-smooth-scroll": "^0.8.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
