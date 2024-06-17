@@ -4,6 +4,7 @@ import Header from '@/components/Header.vue'
 import Hero from '@/components/Hero.vue'
 import Offering from '@/components/Offering.vue'
 import CaseStudy from '@/components/CaseStudy.vue'
+import CaseStudyAlternate from '@/components/CaseStudyAlternate.vue'
 import AboutUs from '@/components/AboutUs.vue'
 import FAQ from '@/components/FAQ.vue'
 import Contact from '@/components/Contact.vue'
@@ -39,6 +40,7 @@ requestAnimationFrame(raf)
     <AboutUs />
     <Offering />
     <CaseStudy />
+    <CaseStudyAlternate />
     <FAQ />
     <Contact />
 
