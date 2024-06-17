@@ -59,7 +59,7 @@ onMounted(() => {
         },
         opacity: 1,
         y: -300,
-        duration: 1,
+        duration: 0.1
     });
 
 

@@ -3,8 +3,7 @@
         <p class="logo">Bourne</p>
         <ul class="header__menu" role="menu">
             <li role="menuitem">
-                <!-- <a :href="'#about'" @click.prevent="scrollToAbout">About</a> -->
-                <router-link :to="{ name: 'home', hash: '#about' }">About</router-link>
+                <router-link :to="{ path: '/', hash: '#about' }" @click.prevent="scrollToAbout">About</router-link>
             </li>
             <li role="menuitem">
                 <router-link :to="{ name: 'home', hash: '#casestudy' }">Testimonial</router-link>
