@@ -49,16 +49,16 @@ onMounted(() => {
             }, "-=0.75");
     });
 
-    gsap.from(".hero", {
+    gsap.to(".hero", {
         scrollTrigger: {
             trigger: ".hero",
-            start: "top 100%",
-            end: "bottom 100%",
+            start: "top 20%",
+            end: "bottom 20%",
             scrub: 1,
             toggleActions: "play none none none",
         },
-        opacity: 0,
-        y: 200,
+        opacity: 1,
+        y: -300,
         duration: 1,
     });
 
