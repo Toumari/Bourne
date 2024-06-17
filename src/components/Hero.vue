@@ -49,7 +49,7 @@ onMounted(() => {
             }, "-=0.75");
     });
 
-    gsap.to(".hero", {
+    gsap.to(".hero-content", {
         scrollTrigger: {
             trigger: ".hero",
             start: "top 20%",
