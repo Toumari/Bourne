@@ -7,7 +7,7 @@
                 <router-link :to="{ name: 'home', hash: '#about' }">About</router-link>
             </li>
             <li role="menuitem">
-                <router-link :to="{ name: 'home', hash: '#casestudy' }">Case Study</router-link>
+                <router-link :to="{ name: 'home', hash: '#casestudy' }">Testimonial</router-link>
             </li>
             <li role=menuitem>
                 <router-link :to="{ name: 'home', hash: '#contact' }">Contact</router-link>
@@ -27,8 +27,8 @@
                     <a :href="'#about'" @click.prevent="scrollToAbout" role="menuitem" class="mobile-link">About</a>
                 </li>
                 <li class="mobile__nav-link" role="menuitem">
-                    <a :href="'#services'" @click.prevent="scrollToServices" role="menuitem" class="mobile-link">Case
-                        Study</a>
+                    <a :href="'#services'" @click.prevent="scrollToServices" role="menuitem"
+                        class="mobile-link">Testimonial</a>
                 </li>
                 <li class="mobile__nav-link" role="menuitem">
                     <a :href="'#contact'" @click.prevent="scrollToContact" role="menuitem"

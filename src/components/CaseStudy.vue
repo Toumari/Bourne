@@ -1,12 +1,12 @@
 <template>
     <div class="wrapper" id="casestudy">
-
-
         <section class="container case-study">
             <div class="case-text">
-                <h1 class="title">Case Study</h1>
+                <p class="testimonial-small">Testimonial</p>
+                <h2 class="title">Johaan Svornikan</h2>
                 <img class="img img1 img-mob" src="@/assets/skii1.jpg" alt="">
-                <h2 class="case-study-desc">Follow the story of reknowned Pioneer Johaan Svornikan</h2>
+                <h3 class="case-study-desc">Follow the exciting story of Johaan as he descended the world's toughest
+                    slopes</h3>
                 <p class="case-study-para">
                     We follow the story of Johaan Svornikan, a pioneer in the world of skiing. Johaan was born in the
                     small town of Voss, Norway. He grew up skiing the mountains of Norway and quickly became one of the
@@ -38,6 +38,14 @@
 </script>
 
 <style scoped>
+.testimonial-small {
+    font-size: calc(1rem + 0.2vw);
+    color: rgb(219, 104, 3);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
 .learn-more-btn {
     border-bottom: 2px solid rgb(219, 104, 3);
     display: block;
@@ -69,13 +77,13 @@
 
 .title {
     color: #fff;
-
+    margin-bottom: .75rem;
 }
 
 .case-study-desc {
-    font-size: 1.25rem;
+    font-size: calc(1.125rem + 0.2vw);
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-weight: 600;
 }
 
@@ -105,6 +113,11 @@
 /* lg */
 @media (min-width: 1024px) {
 
+    .testimonial-small {
+
+        text-align: left;
+    }
+
     .learn-more-btn {
         margin: unset;
     }
@@ -115,9 +128,9 @@
     }
 
     .case-study-desc {
-        font-size: calc(1.2rem + 0.2vw);
+
         text-align: left;
-        max-width: 30ch;
+        max-width: 40ch;
     }
 
     .case-study-para {
