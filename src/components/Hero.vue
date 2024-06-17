@@ -4,15 +4,9 @@
             <div class="hero-content">
                 <h1 class="hero-title">Bourne</h1>
                 <p class="hero-text">
-                    We are a team of experienced adventurers who have traveled the world. We are here to help you plan
-                    your next adventure. Whether you are looking for a relaxing beach vacation or a challenging mountain
-                    climb, we have you covered.
+                    Adventure is a click away.
                 </p>
-                <a class="hero-btn" href="#about">Learn More <svg class="arrow" width="800px" height="800px" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#fca311" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></a>
+                <a class="hero-btn" href="#about">Learn More </a>
             </div>
         </section>
     </div>
@@ -54,41 +48,51 @@ onMounted(() => {
 <style scoped>
 @import url('https://api.fontshare.com/v2/css?f[]=switzer@300,700,900&display=swap');
 
+section {
+    padding-top: 0;
+}
+
 .hero {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
     align-items: center;
     height: 90vh;
 }
 
 .hero-title {
-    font-size: calc(5rem + 1vw);
+    font-size: calc(6rem + 1vw);
     font-weight: 900;
-    color: #fff;
-    margin-bottom: 1rem;
+    color: ghostwhite;
     font-family: "Switzer", serif;
     text-align: left;
-    opacity: 0.35;
+    line-height: 0.9
 }
 
 .hero-text {
     font-family: "Switzer", serif;
-    font-size: calc(1rem + 0.2vw);
-    color: #fff;
+    font-size: calc(1.2rem + 0.2vw);
+    color: ghostwhite;
+    font-weight: 300;
     margin-bottom: 2rem;
     max-width: 65ch;
     line-height: 1.6;
 }
 
 .hero-btn {
-    border-bottom: 2px solid #fca311;
+    /* border-bottom: 2px solid #fca311; */
+    background-color: rgba(252, 162, 17, 0.7);
+    padding: 0.5rem 1.5rem;
+    border-radius: 1000px;
     display: flex;
     align-items: center;
     width: fit-content;
-    font-size: calc(1.25rem + 0.1vw);
+    font-size: calc(1.15rem + 0.1vw);
     font-weight: bold;
-    color: #fca311;
+    color: #fff;
     cursor: pointer;
+    margin-inline: auto;
+
 }
 
 .hero-btn .arrow {
@@ -118,8 +122,8 @@ onMounted(() => {
     }
 
     .hero-title {
-        font-size: calc(15rem + 1vw);
-        opacity: 0.35;
+        font-size: calc(7.5rem + 1vw);
+
     }
 
     .hero-text {

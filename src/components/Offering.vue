@@ -1,18 +1,20 @@
 <template>
-    <section class="offering container">
-        <h2 class="title">What we offer</h2>
-        <div class="cards">
-            <Card class="card" title="Mountain Adventures" description="Embark on the journey of a life time on one of our exciting Mountain adventures. 
+    <div class="wrapper">
+        <section class="offering container">
+            <h2 class="title">Latest Offers</h2>
+            <div class="cards">
+                <Card class="card" title="Mountain Adventures" description="Embark on the journey of a life time on one of our exciting Mountain adventures. 
                 Experience the beauty of the mountains and the thrill of the climb." image="./images/mountain.jpg"
-                isOnSale="true" rating="4.9" />
-            <Card class="card" title="Jungle Adventures" description="Embark on the journey of a life time on one of our exciting Jungle adventures.
+                    isOnSale="true" rating="4.9" />
+                <Card class="card" title="Jungle Adventures" description="Embark on the journey of a life time on one of our exciting Jungle adventures.
                 Experience the beauty of the jungle and the thrill of the climb." image="./images/jungle.jpg"
-                rating="4.8" />
-            <Card class="card" title="Underwater Adventures" description="Embark on the journey of a life time on one of our exciting Underwater adventures.
+                    rating="4.8" />
+                <Card class="card" title="Underwater Adventures" description="Embark on the journey of a life time on one of our exciting Underwater adventures.
                 Experience the beauty of the underwater world and the thrill of the climb."
-                image="./images/underwater.jpg" rating="4.9" />
-        </div>
-    </section>
+                    image="./images/underwater.jpg" rating="4.9" />
+            </div>
+        </section>
+    </div>
 </template>
 
 <script setup>

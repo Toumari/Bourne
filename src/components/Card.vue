@@ -1,4 +1,5 @@
 <template>
+
     <div class="card">
         <div v-if="isOnSale" class="bookmark">Up to 30% off</div>
         <img class="card-img" :src="props.image" alt="">
@@ -11,17 +12,12 @@
                     <span class="star">★ </span>
                     <p>{{ props.rating }} </p>
                 </div>
-
             </div>
-
             <p class="card-desc">{{ props.description }}</p>
             <a class="learn-more" href="">Learn More</a>
         </div>
-
-
-
-
     </div>
+
 </template>
 
 <script setup>
@@ -60,6 +56,8 @@ const props = defineProps({
     /* Adjust as needed */
     grid-template-columns: repeat(1, 1fr);
     flex: 1;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
@@ -77,7 +75,7 @@ const props = defineProps({
     background-color: #fca311;
     width: 150px;
     height: 30px;
-    border-radius: 8px 0 8px 0;
+    border-radius: 0 0 8px 0;
     color: #fff;
     text-align: center;
     line-height: 30px;
@@ -86,13 +84,12 @@ const props = defineProps({
 
 .card-text {
     background-color: #fff;
+    color: #333;
     padding: 0rem 1rem 1rem 1rem;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
 
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .card-title {
@@ -109,9 +106,7 @@ const props = defineProps({
 
 .card-img {
     width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    max-height: 150px;
+    max-height: 250px;
     object-fit: cover;
     justify-self: flex-end;
 }

@@ -59,7 +59,7 @@ onMounted(() => {
     border-radius: 8px;
     margin-inline: auto;
     margin-bottom: 1rem;
-    font-size: calc(0.875rem + 0.1vw);
+    font-size: calc(0.8rem + 0.1vw);
     background: rgb(219, 104, 3);
     color: white;
     padding: 15px;
