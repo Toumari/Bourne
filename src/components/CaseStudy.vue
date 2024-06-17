@@ -10,8 +10,9 @@
                 <p class="case-study-para">
                     We follow the story of Johaan Svornikan, a pioneer in the world of skiing. Johaan was born in the
                     small town of Voss, Norway. He grew up skiing the mountains of Norway and quickly became one of the
-                    best skiers in the world. Johaan was known for his daring jumps and his ability to ski down the
-                    steepest mountains with ease.
+                    best skiers in the world. Johaan is known for his daring descents of some of the world's toughest
+                    slopes. In this case study, we follow Johaan as he takes on the challenge of skiing the infamous
+                    "White Death" slope in the Swiss Alps. We'll see how Johaan prepares for the challenge.
                 </p>
                 <router-link :to="{ name: 'casestudy' }" class="learn-more-btn">Learn More</router-link>
             </div>
