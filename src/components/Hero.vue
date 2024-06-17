@@ -81,7 +81,7 @@ section {
 
 .hero-btn {
     /* border-bottom: 2px solid #fca311; */
-    background-color: rgba(252, 162, 17, 0.7);
+    background-color: rgb(219, 104, 3);
     padding: 0.5rem 1.5rem;
     border-radius: 1000px;
     display: flex;

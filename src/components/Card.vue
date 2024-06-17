@@ -72,7 +72,7 @@ const props = defineProps({
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #fca311;
+    background-color: rgb(219, 104, 3);
     width: 150px;
     height: 30px;
     border-radius: 0 0 8px 0;
@@ -102,25 +102,26 @@ const props = defineProps({
 
 .card-desc {
     padding-inline: .5rem;
+    margin-bottom: 2rem;
 }
 
 .card-img {
     width: 100%;
-    max-height: 250px;
+    min-height: 200px;
+    max-height: 200px;
     object-fit: cover;
     justify-self: flex-end;
 }
 
 
 .learn-more {
-    border-bottom: 2px solid #fca311;
-    display: block;
+    border-bottom: 2px solid rgb(219, 104, 3);
     width: fit-content;
     margin-left: 0.5rem;
-    margin-top: 1rem;
+    margin-top: auto;
     font-size: calc(1.rem + 0.1vw);
     font-weight: bold;
-    color: #fca311;
+    color: rgb(219, 104, 3);
     cursor: pointer;
     transition: all 0.3s ease;
 }

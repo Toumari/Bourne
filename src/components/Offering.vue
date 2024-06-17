@@ -6,11 +6,11 @@
                 <Card class="card" title="Mountain Adventures" description="Embark on the journey of a life time on one of our exciting Mountain adventures. 
                 Experience the beauty of the mountains and the thrill of the climb." image="./images/mountain.jpg"
                     isOnSale="true" rating="4.9" />
-                <Card class="card" title="Jungle Adventures" description="Embark on the journey of a life time on one of our exciting Jungle adventures.
-                Experience the beauty of the jungle and the thrill of the climb." image="./images/jungle.jpg"
-                    rating="4.8" />
-                <Card class="card" title="Underwater Adventures" description="Embark on the journey of a life time on one of our exciting Underwater adventures.
-                Experience the beauty of the underwater world and the thrill of the climb."
+                <Card class="card" title="Jungle Adventures"
+                    description="Embark on a life-changing expedition into the heart of the wild. Explore hidden temples, encounter exotic wildlife, and discover the secrets of the jungle."
+                    image="./images/jungle.jpg" rating="4.8" />
+                <Card class="card" title="Underwater Adventures"
+                    description="Descend beneath the waves on an unforgettable underwater adventure. Explore vibrant coral reefs, encounter majestic marine life, and discover the hidden wonders of the deep."
                     image="./images/underwater.jpg" rating="4.9" />
             </div>
         </section>

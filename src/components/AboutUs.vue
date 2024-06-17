@@ -2,7 +2,7 @@
     <div class="wrapper" id="about">
         <section class="about-us container">
             <h2 class="about-para">The world was made for adventurers, from mountain peaks to jungle valleys. There's so
-                much to see, <span class="empha">That's where we come in.</span> </h2>
+                much to see, <br /> <span class="empha">That's where we come in.</span> </h2>
         </section>
     </div>
 </template>
@@ -64,6 +64,7 @@ onMounted(() => {
 .empha {
     color: #fff;
     font-weight: 700;
+    border-bottom: 2px solid rgb(219, 104, 3);
 }
 
 /* xs */
