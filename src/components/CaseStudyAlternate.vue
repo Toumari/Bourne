@@ -2,7 +2,7 @@
     <div class="wrapper" id="casestudy">
         <section class="container case-study">
             <div class="case-text">
-                <p class="testimonial-small">Testimonial</p>
+                <p class="testimonial-small">Amazon Explorer</p>
                 <h2 class="title">Jasmine Smith</h2>
                 <img class="img img1 img-mob" src="@/assets/jungle3.jpg" alt="">
                 <h3 class="case-study-desc">
