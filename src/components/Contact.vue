@@ -73,9 +73,9 @@
 }
 
 .contact__submit {
-    background-color: #fca311;
+    background-color: rgb(219, 104, 3);
     padding: 0.5rem 1.1rem;
-    border-radius: 8px;
+    border-radius: 3px;
     font-weight: bold;
     color: #fff;
     display: block;

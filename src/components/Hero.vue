@@ -81,9 +81,11 @@ section {
 
 .hero-btn {
     /* border-bottom: 2px solid #fca311; */
-    background-color: rgb(219, 104, 3);
+    background-color: rgba(219, 104, 3, 1);
+    ;
+    border: 2px solid rgb(219, 104, 3);
     padding: 0.5rem 1.5rem;
-    border-radius: 1000px;
+    border-radius: 0.2rem;
     display: flex;
     align-items: center;
     width: fit-content;
@@ -92,7 +94,11 @@ section {
     color: #fff;
     cursor: pointer;
     margin-inline: auto;
+}
 
+.hero-btn:hover {
+    background-color: rgba(219, 104, 3, 0.8);
+    transition: all 0.3s ease;
 }
 
 .hero-btn .arrow {

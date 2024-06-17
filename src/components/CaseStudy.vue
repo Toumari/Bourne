@@ -39,13 +39,13 @@
 
 <style scoped>
 .learn-more-btn {
-    border-bottom: 2px solid #fca311;
+    border-bottom: 2px solid rgb(219, 104, 3);
     display: block;
     width: fit-content;
     margin: 0 auto;
     font-size: calc(1.rem + 0.1vw);
     font-weight: bold;
-    color: #fca311;
+    color: rgb(219, 104, 3);
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;

@@ -48,7 +48,7 @@ onMounted(() => {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-height: 10vh;
 }
 
@@ -77,7 +77,7 @@ onMounted(() => {
 @media (min-width: 768px) {
 
     .about-us {
-        align-items: flex-start;
+
         min-height: 40vh;
     }
 

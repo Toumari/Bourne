@@ -54,10 +54,9 @@ requestAnimationFrame(raf)
   position: relative;
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(248, 249, 98, 0) 0%, rgba(35, 32, 32, 1) 91%), url("../assets/mountains.jpg");
-  background-size: cover;
+  background: linear-gradient(180deg, rgba(248, 249, 98, 0) 25%, rgba(35, 32, 32, 1) 93%), url("../assets/mountain5.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
 }
 
