@@ -27,7 +27,7 @@ const props = defineProps({
     description: String,
     image: String,
     isOnSale: Boolean,
-    rating: Number
+    rating: String
 })
 
 </script>

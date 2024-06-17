@@ -16,10 +16,18 @@
 import { onMounted, onUnmounted } from "vue";
 
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 onMounted(() => {
 
+
+
+
     let ctx = gsap.context(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+
         let tl = gsap.timeline();
         tl.from(".hero-title", {
             duration: 1,
@@ -40,6 +48,21 @@ onMounted(() => {
                 ease: "power4.out",
             }, "-=0.75");
     });
+
+    gsap.from(".hero", {
+        scrollTrigger: {
+            trigger: ".hero",
+            start: "top 100%",
+            end: "bottom 100%",
+            scrub: 1,
+            toggleActions: "play none none none",
+        },
+        opacity: 0,
+        y: 200,
+        duration: 1,
+    });
+
+
 
 });
 
