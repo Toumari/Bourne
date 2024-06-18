@@ -82,7 +82,7 @@ picture::after {
   /* background: linear-gradient(180deg, rgba(248, 249, 98, 0) 25%, rgba(35, 32, 32, 1) 93%); */
   background-position: center;
   background-size: cover;
-  z-index: 1;
+
 }
 
 html.lenis,
