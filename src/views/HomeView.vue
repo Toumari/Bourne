@@ -13,21 +13,22 @@ import Lenis from 'lenis'
 
 
 import { onMounted, ref } from 'vue'
+import { watchEffect } from 'vue'
 
 onMounted(() => {
   console.log("navigated To Home")
 })
 
-const lenis = new Lenis()
+// const lenis = new Lenis()
 
+// watchEffect(() => {
+//   function raf(time) {
+//     lenis.raf(time)
+//     requestAnimationFrame(raf)
+//   }
 
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
+//   requestAnimationFrame(raf)
+// })
 
 </script>
 

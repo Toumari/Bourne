@@ -3,7 +3,7 @@ import HomeView from "@/views/HomeView.vue";
 import CaseStudyView from "@/views/CaseStudyView.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
       setTimeout(() => {
@@ -27,6 +27,10 @@ const router = createRouter({
       name: "casestudy",
       params: true,
       component: CaseStudyView,
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      redirect: { name: "home" },
     },
   ],
 });
