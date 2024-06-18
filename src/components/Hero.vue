@@ -1,6 +1,13 @@
 <template>
-    <div class="hero__wrapper container">
+    <div class="hero__wrapper">
+        <picture>
+            <source srcset="../assets/mountain5.avif" type="image/avif" />
+            <img loading="eager" decoding="async" id="heroimg" src="../assets/mountain6.webp" alt="Mountain"
+                height="400" fetchpriority="high" width="400" />
+        </picture>
+        <Header />
         <section class="hero" role="region" aria-label="Hero Section" ref="hero">
+
             <div class="hero-content">
                 <h1 class="hero-title">Bourne</h1>
                 <p class="hero-text">
@@ -13,6 +20,7 @@
 </template>
 
 <script setup>
+import Header from "@/components/Header.vue";
 import { onMounted, onUnmounted } from "vue";
 
 import { gsap } from "gsap";
@@ -60,6 +68,31 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.hero__wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#heroimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -999;
+}
+
+picture::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(248, 249, 98, 0) 25%, rgba(35, 32, 32, 1) 93%);
+}
+
+
 section {
     padding-top: 0;
 }
@@ -70,6 +103,7 @@ section {
     text-align: center;
     align-items: center;
     height: 90vh;
+    position: relative;
 }
 
 .hero-title {
