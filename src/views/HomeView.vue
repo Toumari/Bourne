@@ -34,7 +34,11 @@ onMounted(() => {
 
 <template>
   <main>
-    <div class="top-section">
+    <div class="top-section" rel="preload">
+      <picture>
+        <source srcset="../assets/mountain5.avif" type="image/avif" />
+        <img loading="eager" decoding="async" id="heroimg" src="../assets/mountain5.avif" alt="Mountain" />
+      </picture>
       <Header />
       <Hero />
     </div>
@@ -53,13 +57,31 @@ onMounted(() => {
 </template>
 
 <style scoped>
+#heroimg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+picture::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(248, 249, 98, 0) 25%, rgba(35, 32, 32, 1) 93%);
+}
+
 .top-section {
   position: relative;
-  width: 100%;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(248, 249, 98, 0) 25%, rgba(35, 32, 32, 1) 93%), url("../assets/mountain5.avif");
+  /* background: linear-gradient(180deg, rgba(248, 249, 98, 0) 25%, rgba(35, 32, 32, 1) 93%); */
   background-position: center;
   background-size: cover;
+  z-index: 1;
 }
 
 html.lenis,
