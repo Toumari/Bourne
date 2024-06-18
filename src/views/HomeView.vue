@@ -42,7 +42,6 @@ onMounted(() => {
         <img loading="eager" decoding="async" id="heroimg" src="../assets/mountain5.avif" alt="Mountain" height="400"
           fetchpriority="high" width="400" />
       </picture>
-
       <Hero />
     </div>
     <AboutUs />
