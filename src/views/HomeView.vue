@@ -37,7 +37,8 @@ onMounted(() => {
     <div class="top-section" rel="preload">
       <picture>
         <source srcset="../assets/mountain5.avif" type="image/avif" />
-        <img loading="eager" decoding="async" id="heroimg" src="../assets/mountain5.avif" alt="Mountain" />
+        <img loading="eager" decoding="async" id="heroimg" src="../assets/mountain5.avif" alt="Mountain" height="400"
+          fetchpriority="high" width="400" />
       </picture>
       <Header />
       <Hero />
