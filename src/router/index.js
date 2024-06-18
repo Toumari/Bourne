@@ -12,6 +12,8 @@ const router = createRouter({
           el.scrollIntoView({ behavior: "smooth" });
         }
       }, 200);
+    } else {
+      return { top: 0 };
     }
   },
   routes: [

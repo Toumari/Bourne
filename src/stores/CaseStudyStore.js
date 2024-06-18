@@ -41,14 +41,34 @@ export const useCaseStudyStore = defineStore("caseStudy", {
         id: 2,
         title: "Case Study 2",
         description: "This is the second case study",
-
+        days: [
+          {
+            title: "Day 1: Arrival and Deep Dive",
+            description:
+              "Jasmine, with a sense of wonder in her eyes, arrives at the Amazon rainforest. The humidity hits her like a warm blanket, and the cacophony of exotic bird calls fills the air. After a warm welcome from the local guides, she embarks on a short boat ride along the mighty Amazon river, spotting playful river dolphins and learning about the vital role the river plays in the rainforest ecosystem.",
+          },
+          {
+            title: "Day 2: Unveiling the Rainforest Canopy",
+            description:
+              "Jasmine wakes up to the vibrant symphony of birdsong. After a delicious breakfast of local fruits and hearty stews, she ventures into the rainforest with her guide. They ascend a towering observation tower, offering breathtaking views of the endless green canopy. The guide points out fascinating insects, camouflaged creatures, and the intricate network of plants and animals that thrive in this verdant paradise.",
+          },
+          {
+            title: "Day 3: Exploring the Secrets of the Undergrowth",
+            description:
+              "Today, Jasmine dons sturdy boots and prepares for a trek through the dense rainforest undergrowth. Her guide leads her on winding paths, revealing medicinal plants, towering trees with buttress roots, and fascinating creatures like leafcutter ants and brightly colored frogs. Jasmine learns about the delicate balance of the rainforest floor and the vital role it plays in the overall health of the ecosystem.",
+          },
+          {
+            title: "Day 4: Encountering Indigenous Culture",
+            description:
+              "A special day awaits Jasmine! After a short boat ride, she arrives at a village of an indigenous tribe. They are warmly welcomed with traditional music and demonstrations of their way of life. Jasmine learns about their deep connection to the rainforest, their hunting and gathering techniques, and their intricate handicrafts. This cultural exchange fosters a deeper understanding and appreciation for the rainforest's indigenous people.",
+          },
+          {
+            title: "Day 5: Farewell to the Amazon, Memories Etched Forever",
+            description:
+              "With a heavy heart but a treasure trove of memories, Jasmine prepares to depart from the Amazon. She enjoys a final boat ride, reflecting on the incredible sights, sounds, and experiences of the past few days. Before leaving, she participates in a tree-planting ceremony, contributing to the future of this precious ecosystem. Jasmine departs, forever changed by the magic of the Amazon rainforest.",
+          },
+        ],
         img: "https://via.placeholder.com/150",
-      },
-      {
-        id: 3,
-        title: "Case Study 3",
-        description: "This is the third case study",
-        image: "https://via.placeholder.com/150",
       },
     ],
   }),

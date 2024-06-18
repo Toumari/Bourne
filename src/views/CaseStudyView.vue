@@ -1,8 +1,7 @@
 <template>
     <div class="top-section">
-        <!-- <Header /> -->
+        <Header />
         <section class="container case-study">
-            <router-link :to="{ name: 'home' }" class="back-btn">Back</router-link>
             <h1 class="title">{{ title }}</h1>
             <p class="description">{{ description }}</p>
             <img class="img" :src=img alt="">
@@ -21,6 +20,7 @@
 
 <script setup>
 import Footer from '@/components/Footer.vue'
+import Header from '@/components/Header.vue'
 
 import { useCaseStudyStore } from '@/stores/CaseStudyStore';
 import { useRoute } from 'vue-router';
