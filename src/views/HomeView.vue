@@ -46,6 +46,9 @@ onMounted(() => {
 </template>
 
 <style scoped>
+/* Hide slider image until page is fully loaded*/
+
+
 Header {
   z-index: 1000;
 }

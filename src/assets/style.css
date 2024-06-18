@@ -1,4 +1,3 @@
-@import url('https://api.fontshare.com/v2/css?f[]=switzer@300,700,900&display=swap');
 
 
 html.lenis, html.lenis body {
@@ -21,9 +20,7 @@ html.lenis, html.lenis body {
   pointer-events: none;
 }
 
-
 :root {
-
   /* sizes */
   --size-xxs: 0.5rem;
   --size-xs: 0.75rem;
