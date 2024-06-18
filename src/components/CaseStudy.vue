@@ -4,7 +4,7 @@
             <div class="case-text">
                 <p class="testimonial-small">Cheating White Death</p>
                 <h2 class="title">Johaan Svornikan</h2>
-                <img class="img img1 img-mob" src="@/assets/skii1.jpg" alt="">
+                <img class="img img1 img-mob" src="@/assets/skii1.avif" alt="">
                 <h3 class="case-study-desc">Follow the exciting story of Johaan as he descended the world's toughest
                     slopes</h3>
                 <p class="case-study-para">
