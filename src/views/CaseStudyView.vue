@@ -2,9 +2,13 @@
     <div class="top-section">
         <Header />
         <section class="container case-study">
-            <h1 class="title">{{ title }}</h1>
-            <p class="description">{{ description }}</p>
-            <img class="img" :src=img alt="">
+            <div class="title-container">
+                <div class="title-content">
+                    <h1 class="title">{{ title }}</h1>
+                    <p class="description">{{ description }}</p>
+                </div>
+                <img class="img" :src=img alt="">
+            </div>
             <div class="timeline">
                 <div class="checkpoint" v-for="day in days" :key="day">
                     <div>
@@ -165,18 +169,13 @@ console.log(days[0].title);
 }
 
 .img {
-    width: 100%;
-    max-width: 500px;
+    flex: 1;
+    height: 500px;
     margin: 0 auto;
-    height: 400px;
     object-fit: cover;
-    margin-top: 1.5rem;
     object-position: center;
-
-    top: 15%;
     opacity: .99;
     border-radius: 0.2em;
-    left: 0;
 }
 
 .top-section {
@@ -186,7 +185,25 @@ console.log(days[0].title);
     background-color: #232020;
 }
 
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex: 1;
+    align-items: center;
+}
+
 @media screen and (max-width:1300px) {
+
+    .img {
+        display: none;
+    }
+
+    .title-container {
+        flex-direction: column;
+    }
+
+
     .timeline {
         width: 80vw;
     }

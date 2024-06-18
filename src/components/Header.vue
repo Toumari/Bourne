@@ -3,7 +3,7 @@
         <p class="logo">Bourne</p>
         <ul class="header__menu" role="menu">
             <li role="menuitem">
-                <router-link :to="{ path: '/', hash: '#about' }" @click.prevent="scrollToAbout">About</router-link>
+                <router-link :to="{ path: '/', hash: '#about' }">About</router-link>
             </li>
             <li role="menuitem">
                 <router-link :to="{ name: 'home', hash: '#casestudy' }">Testimonial</router-link>
@@ -23,15 +23,15 @@
         <nav>
             <ul class="mobile-nav__menu" role="menu">
                 <li class="mobile__nav-link" role="menuitem">
-                    <router-link :to="{ path: '/', hash: '#about' }" @click.prevent="scrollToAbout">About</router-link>
+                    <router-link :to="{ path: '/', hash: '#about' }" @click.prevent=toggleMobile>About</router-link>
                 </li>
                 <li class="mobile__nav-link" role="menuitem">
                     <router-link :to="{ name: 'home', hash: '#casestudy' }"
-                        @click.prevent="scrollToServices">Testimonial</router-link>
+                        @click.prevent=toggleMobile>Testimonial</router-link>
                 </li>
                 <li class="mobile__nav-link" role="menuitem">
                     <router-link :to="{ name: 'home', hash: '#contact' }"
-                        @click.prevent="scrollToContact">Contact</router-link>
+                        @click.prevent=toggleMobile>Contact</router-link>
                 </li>
             </ul>
         </nav>
@@ -45,26 +45,31 @@ import { ref, onMounted, watch } from 'vue'
 const isMobile = ref(false)
 const isMenuOpen = ref(false)
 
-const scrollToAbout = () => {
-    // Smooth scrolling behavior (optional):
-    document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
-    isMenuOpen.value = false
+const toggleMobile = () => {
+    isMenuOpen.value = false;
     isMobile.value = false
 }
 
-const scrollToServices = () => {
-    // Smooth scrolling behavior (optional):
-    document.querySelector('#casestudy').scrollIntoView({ behavior: 'smooth' });
-    isMenuOpen.value = false
-    isMobile.value = false
-}
+// const scrollToAbout = () => {
+//     // Smooth scrolling behavior (optional):
+//     document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+//     isMenuOpen.value = false
+//     isMobile.value = false
+// }
 
-const scrollToContact = () => {
-    // Smooth scrolling behavior (optional):
-    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
-    isMenuOpen.value = false
-    isMobile.value = false
-}
+// const scrollToServices = () => {
+//     // Smooth scrolling behavior (optional):
+//     document.querySelector('#casestudy').scrollIntoView({ behavior: 'smooth' });
+//     isMenuOpen.value = false
+//     isMobile.value = false
+// }
+
+// const scrollToContact = () => {
+//     // Smooth scrolling behavior (optional):
+//     document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+//     isMenuOpen.value = false
+//     isMobile.value = false
+// }
 
 const toggleNav = () => {
     console.log("clicked")

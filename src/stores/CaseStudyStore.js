@@ -34,7 +34,7 @@ export const useCaseStudyStore = defineStore("caseStudy", {
           },
         ],
         description:
-          "Johaan took on the world's most challenging slopes, and came out on top. He's a true inspiration to us all.",
+          "Johaan Svornikan, an avid skier, embarks on a thrilling adventure to a picturesque ski resort nestled in the heart of the Alps. Join him as he navigates the slopes, immerses himself in the local culture, and discovers the magic of the mountains. From gentle beginner runs to challenging off-piste adventures, Johaan's journey is filled with excitement, camaraderie, and breathtaking views. Are you ready to hit the slopes with Johaan?",
         img: "https://images.unsplash.com/photo-1611002214733-84580aaa1b46?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
