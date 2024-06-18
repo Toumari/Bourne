@@ -1,11 +1,13 @@
 <template>
+
     <div class="hero__wrapper">
+        <Header />
         <picture>
             <source srcset="../assets/mountain5.avif" type="image/avif" />
             <img loading="eager" decoding="async" id="heroimg" src="../assets/mountain6.webp" alt="Mountain"
                 height="400" fetchpriority="high" width="400" />
         </picture>
-        <Header />
+
         <section class="hero" role="region" aria-label="Hero Section" ref="hero">
 
             <div class="hero-content">
@@ -79,7 +81,7 @@ onMounted(() => {
     height: 100vh;
     position: absolute;
     top: 0;
-    z-index: -999;
+    z-index: -5;
 }
 
 picture::after {
@@ -90,6 +92,7 @@ picture::after {
     right: 0;
     bottom: 0;
     background: linear-gradient(180deg, rgba(248, 249, 98, 0) 25%, rgba(35, 32, 32, 1) 93%);
+    z-index: -2
 }
 
 

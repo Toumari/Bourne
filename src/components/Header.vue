@@ -112,7 +112,7 @@ watch(isMobile, (newVal) => {
     align-items: center;
     padding: 1rem;
     color: #fff;
-    z-index: 999;
+
     background-color: transparent;
 }
 
@@ -126,7 +126,7 @@ watch(isMobile, (newVal) => {
     font-size: 1.5rem;
     font-weight: 900;
     color: var(--clr-dark);
-    z-index: 999;
+
 }
 
 .header__menu {
