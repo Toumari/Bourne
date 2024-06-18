@@ -34,13 +34,15 @@ onMounted(() => {
 
 <template>
   <main>
+
     <div class="top-section" rel="preload">
+      <Header />
       <picture>
         <source srcset="../assets/mountain5.avif" type="image/avif" />
         <img loading="eager" decoding="async" id="heroimg" src="../assets/mountain5.avif" alt="Mountain" height="400"
           fetchpriority="high" width="400" />
       </picture>
-      <Header />
+
       <Hero />
     </div>
     <AboutUs />
@@ -58,12 +60,17 @@ onMounted(() => {
 </template>
 
 <style scoped>
+Header {
+  z-index: 1000;
+}
+
 #heroimg {
   object-fit: cover;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
+  z-index: -999;
 }
 
 picture::after {
