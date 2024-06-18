@@ -23,15 +23,15 @@
         <nav>
             <ul class="mobile-nav__menu" role="menu">
                 <li class="mobile__nav-link" role="menuitem">
-                    <a :href="'#about'" @click.prevent="scrollToAbout" role="menuitem" class="mobile-link">About</a>
+                    <router-link :to="{ path: '/', hash: '#about' }" @click.prevent="scrollToAbout">About</router-link>
                 </li>
                 <li class="mobile__nav-link" role="menuitem">
-                    <a :href="'#services'" @click.prevent="scrollToServices" role="menuitem"
-                        class="mobile-link">Testimonial</a>
+                    <router-link :to="{ name: 'home', hash: '#casestudy' }"
+                        @click.prevent="scrollToServices">Testimonial</router-link>
                 </li>
                 <li class="mobile__nav-link" role="menuitem">
-                    <a :href="'#contact'" @click.prevent="scrollToContact" role="menuitem"
-                        class="mobile-link">Contact</a>
+                    <router-link :to="{ name: 'home', hash: '#contact' }"
+                        @click.prevent="scrollToContact">Contact</router-link>
                 </li>
             </ul>
         </nav>
