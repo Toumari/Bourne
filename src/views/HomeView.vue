@@ -72,7 +72,7 @@ picture::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(248, 249, 98, 0) 25%, rgba(35, 32, 32, 1) 93%);
+  /* background: linear-gradient(180deg, rgba(248, 249, 98, 0) 25%, rgba(35, 32, 32, 1) 93%); */
 }
 
 .top-section {
