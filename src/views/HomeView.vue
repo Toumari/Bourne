@@ -57,7 +57,7 @@ onMounted(() => {
   position: relative;
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(248, 249, 98, 0) 25%, rgba(35, 32, 32, 1) 93%), url("../assets/mountain5.jpg");
+  background: linear-gradient(180deg, rgba(248, 249, 98, 0) 25%, rgba(35, 32, 32, 1) 93%), url("../assets/mountain5.avif");
   background-position: center;
   background-size: cover;
   height: 100%;

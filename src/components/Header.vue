@@ -1,6 +1,8 @@
 <template>
     <header class="header container" :class="{ hidden: !isMobile }" role="banner">
-        <p class="logo">Bourne</p>
+        <p class="logo">
+            <router-link :to="{ path: '/' }">Bourne</router-link>
+        </p>
         <ul class="header__menu" role="menu">
             <li role="menuitem">
                 <router-link :to="{ path: '/', hash: '#about' }">About</router-link>
@@ -22,6 +24,9 @@
     <div v-if="isMenuOpen" class="mobile-nav" :class="{ hidden: !isMobile }" role="navigation" id="mobile-nav">
         <nav>
             <ul class="mobile-nav__menu" role="menu">
+                <li class="mobile__nav-link" role="menuitem">
+                    <router-link :to="{ path: '/' }" @click.prevent=toggleMobile>Home</router-link>
+                </li>
                 <li class="mobile__nav-link" role="menuitem">
                     <router-link :to="{ path: '/', hash: '#about' }" @click.prevent=toggleMobile>About</router-link>
                 </li>

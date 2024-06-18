@@ -171,7 +171,7 @@
     .img1 {
         height: 100%;
         width: 100%;
-        background-image: url("@/assets/jungle3.jpg");
+        background-image: url("@/assets/jungle3.avif");
         background-size: cover;
         background-position: center;
         grid-column: 2 / 4;
@@ -181,7 +181,7 @@
     .img2 {
         height: 100%;
         width: 100%;
-        background-image: url("@/assets/jungle2.jpg");
+        background-image: url("@/assets/jungle2.avif");
         background-size: cover;
         background-position: center;
         grid-column: 1 / 2;
@@ -191,7 +191,7 @@
     .img3 {
         height: 100%;
         width: 100%;
-        background-image: url("@/assets/jungle1.jpg");
+        background-image: url("@/assets/jungle1.avif");
         background-size: cover;
         background-position: center;
 
@@ -201,7 +201,7 @@
 
     .img4 {
         width: 100%;
-        background-image: url("@/assets/jungle4.jpg");
+        background-image: url("@/assets/jungle4.avif");
         background-size: cover;
         background-position: center;
 
