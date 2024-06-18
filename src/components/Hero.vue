@@ -21,38 +21,39 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 onMounted(() => {
     let ctx = gsap.context(() => {
         gsap.registerPlugin(ScrollTrigger);
-        let tl = gsap.timeline();
-        tl.from(".hero-title", {
-            duration: 1,
-            y: 100,
-            opacity: 0,
-            ease: "power4.out",
-        })
-            .from(".hero-text", {
-                duration: 1,
-                y: 100,
-                opacity: 0,
-                ease: "power4.out",
-            }, "-=0.75")
-            .from(".hero-btn", {
-                duration: 1,
-                y: 100,
-                opacity: 0,
-                ease: "power4.out",
-            }, "-=0.75");
-    });
+        //     let tl = gsap.timeline();
+        //     tl.from(".hero-title", {
+        //         duration: 1,
+        //         y: 100,
+        //         opacity: 0,
+        //         ease: "power4.out",
+        //     })
+        //         .from(".hero-text", {
+        //             duration: 1,
+        //             y: 100,
+        //             opacity: 0,
+        //             ease: "power4.out",
+        //         }, "-=0.75")
+        //         .from(".hero-btn", {
+        //             duration: 1,
+        //             y: 100,
+        //             opacity: 0,
+        //             ease: "power4.out",
+        //         }, "-=0.75");
+        // });
 
-    gsap.to(".hero-content", {
-        scrollTrigger: {
-            trigger: ".hero",
-            start: "top 20%",
-            end: "bottom 20%",
-            scrub: 1,
-            toggleActions: "play play none none",
-        },
-        opacity: 1,
-        y: -300,
-        duration: 0.1
+        gsap.to(".hero-content", {
+            scrollTrigger: {
+                trigger: ".hero",
+                start: "top 20%",
+                end: "bottom 20%",
+                scrub: 1,
+                toggleActions: "play play none none",
+            },
+            opacity: 1,
+            y: -300,
+            duration: 0.1
+        });
     });
 });
 
