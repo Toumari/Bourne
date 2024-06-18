@@ -21,8 +21,9 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: "/case-study",
+      path: "/case-study/:id",
       name: "casestudy",
+      params: true,
       component: CaseStudyView,
     },
   ],

@@ -18,16 +18,9 @@ import { onMounted, onUnmounted } from "vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
 onMounted(() => {
-
-
-
-
     let ctx = gsap.context(() => {
         gsap.registerPlugin(ScrollTrigger);
-
-
         let tl = gsap.timeline();
         tl.from(".hero-title", {
             duration: 1,
@@ -55,22 +48,17 @@ onMounted(() => {
             start: "top 20%",
             end: "bottom 20%",
             scrub: 1,
-            toggleActions: "play none none none",
+            toggleActions: "play play none none",
         },
         opacity: 1,
         y: -300,
         duration: 0.1
     });
-
-
-
 });
 
 </script>
 
 <style scoped>
-@import url('https://api.fontshare.com/v2/css?f[]=switzer@300,700,900&display=swap');
-
 section {
     padding-top: 0;
 }
@@ -133,15 +121,6 @@ section {
     display: inline-block;
 }
 
-/* xs */
-/* @media (min-width: 475px) {} */
-
-/* sm */
-/* @media (min-width: 640px) {} */
-
-/* md */
-@media (min-width: 768px) {}
-
 /* lg */
 @media (min-width: 1024px) {
     .hero {
@@ -160,10 +139,4 @@ section {
         max-width: 60ch;
     }
 }
-
-/* xl */
-/* @media (min-width: 1280px) {} */
-
-/* xxl */
-/* @media (min-width: 1536px) {} */
 </style>

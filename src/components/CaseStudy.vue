@@ -14,7 +14,8 @@
                     slopes. In this case study, we follow Johaan as he takes on the challenge of skiing the infamous
                     "White Death" slope in the Swiss Alps. We'll see how Johaan prepares for the challenge.
                 </p>
-                <router-link :to="{ name: 'casestudy' }" class="learn-more-btn">Learn More</router-link>
+                <router-link to="/case-study/1" class="learn-more-btn">Learn
+                    More</router-link>
             </div>
             <div class="grid-container">
                 <div class="img-grid">

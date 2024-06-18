@@ -15,7 +15,7 @@
                     remote locations. In this case study, we follow Jasmine as she travels to the deepest parts of the
                     Amazon. We'll see how Jasmine prepares for the challenge.
                 </p>
-                <router-link :to="{ name: 'casestudy' }" class="learn-more-btn">Learn More</router-link>
+                <router-link to="case-study/2" class="learn-more-btn">Learn More</router-link>
             </div>
             <div class="grid-container">
                 <div class="img-grid">

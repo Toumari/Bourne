@@ -5,7 +5,7 @@
             <div class="cards">
                 <Card class="card" title="Mountain Adventures" description="Embark on the journey of a life time on one of our exciting Mountain adventures. 
                 Experience the beauty of the mountains and the thrill of the climb." image="./images/mountain.jpg"
-                    isOnSale="true" rating="4.9" />
+                    :isOnSale="true" rating="4.9" />
                 <Card class="card" title="Jungle Adventures"
                     description="Embark on a life-changing expedition into the heart of the wild. Explore hidden temples, encounter exotic wildlife, and discover the secrets of the jungle."
                     image="./images/jungle.jpg" rating="4.8" />
