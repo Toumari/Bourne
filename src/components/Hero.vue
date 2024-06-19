@@ -76,7 +76,7 @@ onMounted(() => {
     height: 100vh;
     position: absolute;
     top: 0;
-    z-index: -5;
+    z-index: -1;
 }
 
 .hero::after {
@@ -87,7 +87,7 @@ onMounted(() => {
     right: 0;
     bottom: 0;
     background: linear-gradient(180deg, rgba(248, 249, 98, 0) 25%, rgba(35, 32, 32, 1) 93%);
-    z-index: 10;
+    z-index: -1;
 }
 
 
