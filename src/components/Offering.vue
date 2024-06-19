@@ -4,14 +4,14 @@
             <h2 class="title">Latest Offers</h2>
             <div class="cards">
                 <Card class="card" title="Mountain Adventures" description="Embark on the journey of a life time on one of our exciting Mountain adventures. 
-                Experience the beauty of the mountains and the thrill of the climb." image="src\assets\mountain.avif"
+                Experience the beauty of the mountains and the thrill of the climb." image="/src/assets/mountain.avif"
                     :isOnSale="true" rating="4.9" />
                 <Card class="card" title="Jungle Adventures"
                     description="Embark on a life-changing expedition into the heart of the wild. Explore hidden temples, encounter exotic wildlife, and discover the secrets of the jungle."
-                    image="src\assets\jungle.avif" rating="4.8" />
+                    image="\src\assets\jungle.avif" rating="4.8" />
                 <Card class="card" title="Underwater Adventures"
                     description="Descend beneath the waves on an unforgettable underwater adventure. Explore vibrant coral reefs, encounter majestic marine life, and discover the hidden wonders of the deep."
-                    image="src\assets\underwater.webp" rating=" 4.9" />
+                    image="\src\assets\underwater.webp" rating=" 4.9" />
             </div>
         </section>
     </div>
