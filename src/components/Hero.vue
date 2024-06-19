@@ -90,7 +90,6 @@ onMounted(() => {
     z-index: -1;
 }
 
-
 section {
     padding-top: 0;
 }
@@ -126,7 +125,6 @@ section {
 .hero-btn {
     /* border-bottom: 2px solid #fca311; */
     background-color: rgba(219, 104, 3, 1);
-    ;
     border: 2px solid rgb(219, 104, 3);
     padding: 0.5rem 1.5rem;
     border-radius: 0.2rem;
@@ -159,12 +157,10 @@ section {
     .hero {
         height: 100vh;
         width: 100%;
-
     }
 
     .hero-title {
         font-size: calc(7.5rem + 1vw);
-
     }
 
     .hero-text {

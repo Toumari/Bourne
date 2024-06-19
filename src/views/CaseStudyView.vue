@@ -7,7 +7,6 @@
                     <h1 class="title">{{ title }}</h1>
                     <p class="description">{{ description }}</p>
                 </div>
-                <img class="img" :src=img alt="">
             </div>
             <div class="timeline">
                 <div class="checkpoint" v-for="day in days" :key="day">
