@@ -8,13 +8,9 @@
 </template>
 
 <style>
-@font-face {
-  font-family: 'switzer';
-  src: url("@/assets/Switzer-Variable.ttf");
-  font-display: swap;
-}
+@import url("https://api.fontshare.com/v2/css?f[]=switzer@300,700,800,900&display=swap");
 
 body {
-  font-family: 'switzer';
+  font-family: 'Switzer', sans-serif;
 }
 </style>

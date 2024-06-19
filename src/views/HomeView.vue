@@ -18,18 +18,15 @@ import { onBeforeMount } from 'vue'
 </script>
 
 <template>
-  <KeepAlive>
-    <main class="main">
-      <Hero />
-      <AboutUs />
-      <Offering />
-      <CaseStudy />
-      <CaseStudyAlternate />
-      <FAQ />
-      <Contact />
-      <Footer />
-    </main>
-  </KeepAlive>
+
+  <Hero />
+  <AboutUs />
+  <Offering />
+  <CaseStudy />
+  <CaseStudyAlternate />
+  <FAQ />
+  <Contact />
+  <Footer />
 </template>
 
 <style scoped>
