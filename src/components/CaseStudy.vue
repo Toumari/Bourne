@@ -19,10 +19,10 @@
             </div>
             <div class="grid-container">
                 <div class="img-grid">
-                    <div class="img1"></div>
-                    <div class="img2"></div>
-                    <div class="img3"></div>
-                    <div class="img4"></div>
+                    <div class="img img1"></div>
+                    <div class="img img2"></div>
+                    <div class="img img3"></div>
+                    <div class="img img4"></div>
                 </div>
             </div>
 
@@ -40,6 +40,10 @@
 </script>
 
 <style scoped>
+.img {
+    border-radius: 8px;
+}
+
 .testimonial-small {
     font-size: calc(1rem + 0.2vw);
     color: rgb(219, 104, 3);

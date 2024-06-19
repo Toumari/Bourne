@@ -51,12 +51,11 @@ const props = defineProps({
 .card {
     position: relative;
     margin-bottom: 2rem;
+    border-radius: 8px !important;
     display: grid;
     grid-template-rows: auto 1fr;
-    /* Adjust as needed */
     grid-template-columns: repeat(1, 1fr);
     flex: 1;
-
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -75,7 +74,7 @@ const props = defineProps({
     background-color: rgb(219, 104, 3);
     width: 150px;
     height: 30px;
-    border-radius: 0 0 8px 0;
+    border-radius: 8px 0 8px 0;
     color: #fff;
     text-align: center;
     line-height: 30px;
@@ -86,14 +85,15 @@ const props = defineProps({
     background-color: #fff;
     color: #333;
     padding: 0rem 1rem 1rem 1rem;
-
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
 
 .card-title {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: bold;
     padding-inline: .5rem;
     padding-top: 1rem;
@@ -109,6 +109,8 @@ const props = defineProps({
     width: 100%;
     min-height: 200px;
     max-height: 200px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     object-fit: cover;
     justify-self: flex-end;
 }

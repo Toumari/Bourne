@@ -62,6 +62,7 @@
 }
 
 .card {
+    border-radius: 8px;
     max-width: 35em;
     min-height: 25em;
     position: relative;
