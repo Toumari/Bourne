@@ -169,11 +169,11 @@ console.log(days[0].title);
 }
 
 .img {
-    flex: 1;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     margin: 0 auto;
     object-fit: cover;
-    object-position: center;
+
     opacity: .99;
     border-radius: 0.2em;
 }
@@ -187,9 +187,8 @@ console.log(days[0].title);
 
 .title-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 2rem;
-    flex: 1;
     align-items: center;
 }
 
