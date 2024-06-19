@@ -9,40 +9,35 @@ import AboutUs from '@/components/AboutUs.vue'
 import FAQ from '@/components/FAQ.vue'
 import Contact from '@/components/Contact.vue'
 import Footer from '@/components/Footer.vue'
-import Lenis from 'lenis'
+
+import { onBeforeMount } from 'vue'
 
 
-import { onMounted, ref } from 'vue'
-import { watchEffect } from 'vue'
 
 
 </script>
 
 <template>
-  <main>
-    <Hero />
-    <AboutUs />
-    <Offering />
-    <CaseStudy />
-    <CaseStudyAlternate />
-    <FAQ />
-    <Contact />
-    <Footer />
-  </main>
+  <KeepAlive>
+    <main class="main">
+      <Hero />
+      <AboutUs />
+      <Offering />
+      <CaseStudy />
+      <CaseStudyAlternate />
+      <FAQ />
+      <Contact />
+      <Footer />
+    </main>
+  </KeepAlive>
 </template>
 
 <style scoped>
 /* Hide slider image until page is fully loaded*/
 
-
-Header {
-  z-index: 1000;
-}
-
-
-.top-section {
-  position: relative;
-
+html,
+body {
+  overscroll-behavior-y: none;
 }
 
 
