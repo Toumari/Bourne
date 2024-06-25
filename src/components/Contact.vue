@@ -4,7 +4,7 @@
         <p class="contact__description">Get in touch with me via email and I'll reply as fast as I can to your enquiry!
         </p>
         <!-- <form action="https://api.web3forms.com/submit" method="POST" aria-label="Contact Form" netlify> -->
-        <form name="contact" method="POST" aria-label="Contact Form">
+        <form name="contact" action="/thanks" method="POST" aria-label="Contact Form" netlify>
             <!-- <input type="hidden" name="access_key" value="7364cf4f-a2d8-4e74-87fd-8f078b9b10a4"> -->
             <input type="hidden" name="contact" value="contact" netlify>
             <label for="name">Name</label>
