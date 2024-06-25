@@ -3,17 +3,16 @@
         <h2 id="contact-title" class="title">Contact Us</h2>
         <p class="contact__description">Get in touch with me via email and I'll reply as fast as I can to your enquiry!
         </p>
-        <form action="https://api.web3forms.com/submit" method="POST" aria-label="Contact Form" netlify>
-
-            <input type="hidden" name="access_key" value="7364cf4f-a2d8-4e74-87fd-8f078b9b10a4">
-
+        <!-- <form action="https://api.web3forms.com/submit" method="POST" aria-label="Contact Form" netlify> -->
+        <form method="POST" aria-label="Contact Form" netlify>
+            <!-- <input type="hidden" name="access_key" value="7364cf4f-a2d8-4e74-87fd-8f078b9b10a4"> -->
             <label for="name">Name</label>
             <input class="contact__name" type="text" name="name" id="name" required aria-required="true">
             <label for="email">Email</label>
             <input class="contact__email" type="email" name="email" id="email" required aria-required="true">
             <label for="message">Message</label>
             <textarea class="contact__message" name="message" id="message" required aria-required="true"></textarea>
-            <div class="h-captcha" data-captcha="true" aria-label="hCaptcha Spam Protection"></div>
+            <!-- <div class="h-captcha" data-captcha="true" aria-label="hCaptcha Spam Protection"></div> -->
             <button class="contact__submit" type="submit">Submit</button>
         </form>
     </section>
